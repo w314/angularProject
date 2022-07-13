@@ -1,0 +1,3 @@
+<h1>{{ title }}</h1>
+<!-- set up rendering child components passing data along -->
+<app-zoo-animal *ngFor="let animal of animals" [animal]="animal" (likeAnimal)="likeAnimal($event)"></app-zoo-animal>

@@ -1,0 +1,10 @@
+<h2>{{ animal.name }}</h2>
+<p><strong>Diet:</strong> {{ animal.diet }}</p>
+<p>Votes: {{ animal.votes }}</p>
+<!-- 
+  Add button for upvotes, use event binding to communicate
+  from template to component class
+-->
+<button (click)="upvote(animal)">Upvote</button>
+<button (click)="like(animal)">Like</button>
+
